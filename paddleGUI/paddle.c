@@ -34,6 +34,7 @@
 #define ENC_SCK_RP          D2_RP
 int MODE = 2;
 int pos = 0;
+int temppos = 0;
 int angtemp = 0;
 int angle = 0;
 int chan = 0;
@@ -214,6 +215,24 @@ void modeControl(void){
         break;
     case DAMPER: // should keep a change
         D6 = 1;
+        // PSEUDOCODE
+        if (chan == 1){
+          temppos = pos;
+        }
+        if(pos >= temppos+2 || pos <= temppos-2){
+          if(pos-temppos > 0){
+            D10 = 0;
+            D9 = 0;
+            PWM = base_PWN * (pos-temppos); // TODO there needs to be scaling here or the motor will fuck itself
+            // assume "base_PWN" is the default one we use in SPRING and TEXTURE
+          } else if(pos-temppos < 0){
+            D10 = 0;
+            D9 = 1;
+            PWM = base_PWN * (temopos-pos); // TODO there needs to be scaling here or the motor will fuck itself
+            // assume "base_PWN" is the default one we use in SPRING and TEXTURE
+          } else {D10 = 1;}
+        }
+        chan = 0;
         break;
     case TEXTURE: // should keep a change
         D10 = 1;
@@ -237,6 +256,16 @@ void modeControl(void){
         break;              // should addd the 4th button
     case WALL: // should keep a change
         D6 = 1;
+        // D10 = 1
+        // PSEUDOCODE
+        // let's say we want to stay within positions 200 and 500 (completely arbitrary)
+        if(pos >= 200){
+          D9 = 0;
+          D10 = 0;
+        } else if(pos <= 500){
+          D9 = 1;
+          D10 = 0;
+        } else{D10 = 1;}
         break;
     default:
         D6 = 1;
