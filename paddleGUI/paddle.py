@@ -9,10 +9,11 @@ class paddle:
         self.SPRING = 0
         self.DAMPER = 1
         self.TEXTURE = 2
-        self.READ_SW1 = 3
+        self.WALL = 3
+        self.READ_SW1 = 10
         self.READ_SW2 = 4
         self.READ_SW3 = 5
-        self.READ_ANGLE = 6
+        self.ENC_READ_REG = 6
         self.SET_DUTY_VAL = 7
         self.GET_DUTY_VAL = 8
         self.GET_DUTY_MAX = 9
@@ -73,13 +74,23 @@ class paddle:
     #     else:
     #         return int(ret[0])
 
-    def read_angle(self):
+    def get_angle(self):
         try:
-            ret = self.dev.ctrl_transfer(0xC0, self.READ_ANGLE, 0, 0, 2)
+            ret = self.dev.ctrl_transfer(0xC0, self.ENC_READ_REG, 0x3FFF, 0, 2)
         except usb.core.USBError:
-            print("Could not send READ_ANGLE vendor request.")
+            print("Could not send ENC_READ_REG vendor request.")
         else:
-            return int(ret[0]) + 256 * int(ret[1])
+            return (int(ret[0]) + 256 * int(ret[1])) & 0x3FFF
+
+    def enc_readReg(self, address):
+        try:
+            ret = self.dev.ctrl_transfer(0xC0, self.ENC_READ_REG, address, 0, 2)
+        except usb.core.USBError:
+            print("Could not send ENC_READ_REG vendor request.")
+        else:
+            return ret
+
+
 
     def set_duty_val(self, val):
         try:
@@ -104,7 +115,7 @@ class paddle:
             return int(ret[0]) + 256 * int(ret[1])
 
     def set_duty(self, duty_cycle):
-        val = int(round(duty_cycle * self.get_duty_max() / 100.))
+        val = int(round(duty_cycle * self.get_duty_max() / 500))
         self.set_duty_val(val)
 
     def get_duty(self):

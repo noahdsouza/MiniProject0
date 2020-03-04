@@ -17,6 +17,7 @@ env.Append(BUILDERS = {'List' : list})
 env.Program('paddle', ['paddle.c',
                              'descriptors.c',
                              '../lib/usb.c',
+                             '../lib/ajuart.c',
                              '../lib/elecanisms.c'])
 env.Hex('paddle')
 env.List('paddle')

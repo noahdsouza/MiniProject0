@@ -10,7 +10,7 @@ class paddleGUI:
 
     def __init__(self):
         self.dev = paddle.paddle()
-        if self.dev.dev >= 0:
+        if self.dev.dev is not None:
             self.update_job = None
             self.root = tk.Tk()
             self.root.title('Haptic Paddle GUI')
@@ -21,7 +21,7 @@ class paddleGUI:
             tk.Button(fm, text = 'TEXTURE', command = self.dev.texture).pack(side = tk.LEFT)
             tk.Button(fm, text = 'WALL', command = self.dev.wall).pack(side = tk.LEFT)
             fm.pack(side = tk.TOP)
-            dutyslider = tk.Scale(self.root, from_=0, to=100, orient=tk.HORIZONTAL, showvalue=tk.FALSE, command=self.set_duty_callback)
+            dutyslider = tk.Scale(self.root, from_=0, to=15, orient=tk.HORIZONTAL, showvalue=tk.FALSE, command=self.set_duty_callback)
             dutyslider.set(25)
             dutyslider.pack(side = tk.TOP)
             self.angle_status = tk.Label(self.root, text = 'Angle: ?')
@@ -42,8 +42,8 @@ class paddleGUI:
         self.dev.set_duty(float(value)) # TODO CHANGE TO WHATEVER THE SLIDER NEEDS FOR TEXTURE
 
     def update_status(self):
-        self.angle_status.configure(text = 'Angle: {!s}'.format(self.dev._______())) # TODO change to reading angle
-        self.mode_status.configure(text = 'Mode: {!s}'.format(self.dev._______())) # TODO change to reading mode
+        self.angle_status.configure(text = 'Angle: {!s}'.format(str(self.dev.get_angle()))) # TODO change to reading angle
+        # self.mode_status.configure(text = 'Mode: {!s}'.format(self.dev._______())) # TODO change to reading mode
         # self.sw1_status.configure(text = 'SW1 is currently {!s}'.format(self.dev.read_sw1()))
         # self.sw2_status.configure(text = 'SW2 is currently {!s}'.format(self.dev.read_sw2()))
         # self.sw3_status.configure(text = 'SW3 is currently {!s}'.format(self.dev.read_sw3()))
