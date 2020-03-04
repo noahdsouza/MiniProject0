@@ -175,10 +175,14 @@ void vendor_requests(void) {
     }
 }
 void postion(void){
-  pos = pos + (angle - angtemp);
-  printf("%d\r\n",pos);
-  printf("%d\r\n",angtemp);
+  printf("angtemp: %d\r\n",angtemp);
+  if(angle != angtemp && angle != 0 && angtemp != 0 ){
+    int diff = (angle - angtemp);
+    pos += diff;
+    printf("%d\r\n",angtemp);
+  }
   angtemp = angle;
+  printf("%d\r\n",pos);
 }
 void modeControl(void){
   // printf("mode");
