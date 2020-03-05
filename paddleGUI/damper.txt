@@ -1,0 +1,713 @@
+
+angles: 63
+angtemp: 61
+postion: -2
+T postion: 0
+angles: 60
+angtemp: 63
+postion: -5
+T postion: 0
+angles: 62
+angtemp: 60
+postion: -3
+T postion: 0
+angles: 62
+angtemp: 62
+postion: -3
+T postion: 0
+angles: 63
+angtemp: 62
+postion: -2
+T postion: 0
+angles: 60
+angtemp: 63
+postion: -5
+T postion: 0
+angles: 61
+angtemp: 60
+postion: -4
+T postion: 0
+angles: 62
+angtemp: 61
+postion: -3
+T postion: 0
+angles: 62
+angtemp: 62
+postion: -3
+T postion: 0
+angles: 63
+angtemp: 62
+postion: -2
+T postion: 0
+angles: 62
+angtemp: 63
+postion: -3
+T postion: 0
+angles: 67
+angtemp: 62
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 68
+angtemp: 67
+postion: 3
+T postion: 0
+angles: 66
+angtemp: 68
+postion: 1
+T postion: 0
+angles: 69
+angtemp: 66
+postion: 4
+T postion: 0
+angles: 66
+angtemp: 69
+postion: 1
+T postion: 0
+angles: 68
+angtemp: 66
+postion: 3
+T postion: 0
+angles: 65
+angtemp: 68
+postion: 0
+T postion: 0
+angles: 67
+angtemp: 65
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 66
+angtemp: 67
+postion: 1
+T postion: 0
+angles: 65
+angtemp: 66
+postion: 0
+T postion: 0
+angles: 64
+angtemp: 65
+postion: -1
+T postion: 0
+angles: 62
+angtemp: 64
+postion: -3
+T postion: 0
+angles: 67
+angtemp: 62
+postion: 2
+T postion: 0
+angles: 64
+angtemp: 67
+postion: -1
+T postion: 0
+angles: 60
+angtemp: 64
+postion: -5
+T postion: 0
+angles: 63
+angtemp: 60
+postion: -2
+T postion: 0
+angles: 60
+angtemp: 63
+postion: -5
+T postion: 0
+angles: 62
+angtemp: 60
+postion: -3
+T postion: 0
+angles: 63
+angtemp: 62
+postion: -2
+T postion: 0
+angles: 54
+angtemp: 63
+postion: -11
+T postion: 0
+angles: 53
+angtemp: 54
+postion: -12
+T postion: 0
+angles: 52
+angtemp: 53
+postion: -13
+T postion: 0
+angles: 46
+angtemp: 52
+postion: -19
+T postion: 0
+angles: 41
+angtemp: 46
+postion: -24
+T postion: 0
+angles: 41
+angtemp: 41
+postion: -24
+T postion: 0
+angles: 37
+angtemp: 41
+postion: -28
+T postion: 0
+angles: 28
+angtemp: 37
+postion: -37
+T postion: 0
+angles: 23
+angtemp: 28
+postion: -42
+T postion: 0
+angles: 24
+angtemp: 23
+postion: -41
+T postion: 0
+angles: 23
+angtemp: 24
+postion: -42
+T postion: 0
+angles: 23
+angtemp: 23
+postion: -42
+T postion: 0
+angles: 23
+angtemp: 23
+postion: -42
+T postion: 0
+angles: 18
+angtemp: 23
+postion: -47
+T postion: 0
+angles: 6
+angtemp: 18
+postion: -59
+T postion: 0
+angles: 3
+angtemp: 6
+postion: -62
+T postion: 0
+angles: 3
+angtemp: 3
+postion: -62
+T postion: 0
+angles: 1
+angtemp: 3
+postion: -64
+T postion: 0
+angles: 159
+angtemp: 1
+postion: 94
+T postion: 0
+angles: 145
+angtemp: 159
+postion: 80
+T postion: 0
+angles: 133
+angtemp: 145
+postion: 68
+T postion: 0
+angles: 132
+angtemp: 133
+postion: 67
+T postion: 0
+angles: 130
+angtemp: 132
+postion: 65
+T postion: 0
+angles: 129
+angtemp: 130
+postion: 64
+T postion: 0
+angles: 128
+angtemp: 129
+postion: 63
+T postion: 0
+angles: 125
+angtemp: 128
+postion: 60
+T postion: 0
+angles: 123
+angtemp: 125
+postion: 58
+T postion: 0
+angles: 121
+angtemp: 123
+postion: 56
+T postion: 0
+angles: 121
+angtemp: 121
+postion: 56
+T postion: 0
+angles: 121
+angtemp: 121
+postion: 56
+T postion: 0
+angles: 122
+angtemp: 121
+postion: 57
+T postion: 0
+angles: 129
+angtemp: 122
+postion: 64
+T postion: 0
+angles: 136
+angtemp: 129
+postion: 71
+T postion: 0
+angles: 141
+angtemp: 136
+postion: 76
+T postion: 0
+angles: 148
+angtemp: 141
+postion: 83
+T postion: 0
+angles: 152
+angtemp: 148
+postion: 87
+T postion: 0
+angles: 157
+angtemp: 152
+postion: 92
+T postion: 0
+angles: 163
+angtemp: 157
+postion: 98
+T postion: 0
+angles: 5
+angtemp: 163
+postion: -60
+T postion: 0
+angles: 12
+angtemp: 5
+postion: -53
+T postion: 0
+angles: 16
+angtemp: 12
+postion: -49
+T postion: 0
+angles: 21
+angtemp: 16
+postion: -44
+T postion: 0
+angles: 25
+angtemp: 21
+postion: -40
+T postion: 0
+angles: 30
+angtemp: 25
+postion: -35
+T postion: 0
+angles: 35
+angtemp: 30
+postion: -30
+T postion: 0
+angles: 40
+angtemp: 35
+postion: -25
+T postion: 0
+angles: 43
+angtemp: 40
+postion: -22
+T postion: 0
+angles: 45
+angtemp: 43
+postion: -20
+T postion: 0
+angles: 47
+angtemp: 45
+postion: -18
+T postion: 0
+angles: 49
+angtemp: 47
+postion: -16
+T postion: 0
+angles: 54
+angtemp: 49
+postion: -11
+T postion: 0
+angles: 60
+angtemp: 54
+postion: -5
+T postion: 0
+angles: 65
+angtemp: 60
+postion: 0
+T postion: 0
+angles: 67
+angtemp: 65
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 67
+angtemp: 67
+postion: 2
+T postion: 0
+angles: 68
+angtemp: 67
+postion: 3
+T postion: 0
+angles: 66
+angtemp: 68
+postion: 1
+T postion: 0
+angles: 68
+angtemp: 66
+postion: 3
+T postion: 0
+angles: 66
+angtemp: 68
+postion: 1
+T postion: 0
+angles: 67
+angtemp: 66
+postion: 2
+T postion: 0
+angles: 68
+angtemp: 67
+postion: 3
+T postion: 0
+angles: 64
+angtemp: 68
+postion: -1
+T postion: 0
+angles: 65
+angtemp: 64
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 64
+angtemp: 65
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 64
+angtemp: 64
+postion: -1
+T postion: 0
+angles: 65
+angtemp: 64
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
+angles: 65
+angtemp: 65
+postion: 0
+T postion: 0
