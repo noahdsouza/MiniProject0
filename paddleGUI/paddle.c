@@ -33,6 +33,7 @@
 #define ENC_MOSI_RP         D0_RP
 #define ENC_SCK_RP          D2_RP
 int MODE = 2;
+int PWMc = 1;
 int pos = 0;
 int temppos = 0;
 int angtemp = 0;
@@ -110,7 +111,7 @@ void vendor_requests(void) {
             break;
         case TEXTURE: // should keep a change
             LED1 = 0; LED2 = 0; LED3 = 1; MODE = 2; chan = 1;
-            D9 = 1;
+            //D9 = 1;
             BD[EP0IN].bytecount = 0;
             BD[EP0IN].status = UOWN | DTS | DTSEN;
             break;              // should addd the 4th button
@@ -180,10 +181,10 @@ void postion(void){
   if(angle != angtemp && angle != 0 && angtemp != 0 ){
     int diff = (angle - angtemp);
     pos += diff;
-    printf("%d\r\n",angtemp);
+    // printf("%d\r\n",angtemp);
   }
   angtemp = angle;
-  printf("%d\r\n",pos);
+  printf("postion: %d\r\n",pos);
 }
 void modeControl(void){
   // printf("mode");
@@ -200,7 +201,7 @@ void modeControl(void){
         if(chan == 1){
           tempangle = 60;
           // printf("%d\r\n",tempangle);
-        }
+        }//OC1RS
         if(angle >= 0){
         if(angle >= tempangle+2 || angle <= tempangle-2){
           if(angle-tempangle > 0){
@@ -219,20 +220,29 @@ void modeControl(void){
         if (chan == 1){
           temppos = pos;
         }
-        if(pos >= temppos+2 || pos <= temppos-2){
+        if(pos >= temppos+3 || pos <= temppos-3){
           if(pos-temppos > 0){
             D10 = 0;
             D9 = 0;
-            PWM = base_PWN * (pos-temppos); // TODO there needs to be scaling here or the motor will fuck itself
+
+            // OC1R = OC1R * (temppos-pos)/ 1000;
+            OC1R = (abs(temppos-pos) < 70) ? OC1R *(1 + (abs(temppos-pos) /100)): OC1R *0;
+            // PWMc = (pos-temppos); // TODO there needs to be scaling here or the motor will fuck itself
             // assume "base_PWN" is the default one we use in SPRING and TEXTURE
-          } else if(pos-temppos < 0){
+          } else {//else if(pos-temppos < 0){
             D10 = 0;
             D9 = 1;
-            PWM = base_PWN * (temopos-pos); // TODO there needs to be scaling here or the motor will fuck itself
+            OC1R = (abs(temppos-pos) < 70) ? OC1R * (1 + (abs(temppos-pos) /100)): OC1R *0;
+            // PWMc = (temppos-pos); // TODO there needs to be scaling here or the motor will fuck itself
+             // OC1R = OC1R * (temppos-pos) / 1000;
             // assume "base_PWN" is the default one we use in SPRING and TEXTURE
-          } else {D10 = 1;}
+          } //else {D10 = 1;}
+        } else {
+          D10 = 1;
+          OC1R = OC1RS >> 4;
         }
         chan = 0;
+        printf("T postion: %d\r\n",temppos);
         break;
     case TEXTURE: // should keep a change
         D10 = 1;
@@ -259,10 +269,10 @@ void modeControl(void){
         // D10 = 1
         // PSEUDOCODE
         // let's say we want to stay within positions 200 and 500 (completely arbitrary)
-        if(pos >= 200){
+        if(pos >= 60){
           D9 = 0;
           D10 = 0;
-        } else if(pos <= 500){
+        } else if(pos <= -60){
           D9 = 1;
           D10 = 0;
         } else{D10 = 1;}
